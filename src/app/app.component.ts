@@ -14,42 +14,8 @@ import { Subscription } from 'rxjs';
 
 
 
-export class AppComponent implements OnInit {
+export class AppComponent  {
   title = 'Raspberry';
-  private jobSub: Subscription
-  //
-  private jobs: Job[] = []
-
-  constructor(private JobsService: JobsServiceService) {
-  }
-
-  ngOnInit() {
-    this.onClick();
-
-    this.jobSub =  this.JobsService.getJobSubject().subscribe(()=>{
-      this.onClick();
-    })
-  }
-
-  ngOnDestroy() {
-    this.jobSub.unsubscribe()
-  }
-
-
-  onClick() {
-    this.JobsService.getJobs().subscribe(resultData => {
-      this.jobs = resultData.response.sort((a, b) => a.name.localeCompare(b.name));
-    }, err => {
-    })
-  }
-
-  killProcess(pid: string) {
-   // console.log(pid)
-    this.JobsService.killJobs(pid)
-  }
-
-  restartProcess(pid: string) {
-    this.JobsService.restartJobs(pid)
-  }
+ 
 
 }

@@ -9,7 +9,7 @@
 
   /***/
   function node_modulesAngularDevkitBuildAngularSrcAngularCliFilesPluginsRawCssLoaderJsNode_modulesPostcssLoaderSrcIndexJsSrcStylesCss(module, exports) {
-    module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDhFQUE4RSIsImZpbGUiOiJzcmMvc3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFlvdSBjYW4gYWRkIGdsb2JhbCBzdHlsZXMgdG8gdGhpcyBmaWxlLCBhbmQgYWxzbyBpbXBvcnQgb3RoZXIgc3R5bGUgZmlsZXMgKi9cbiJdfQ== */", '', '']];
+    module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\r\n\r\n\r\n*{\r\n    margin:0px;\r\n    padding:0px\r\n }\r\n\r\n\r\nbody{\r\n   margin:0px;\r\n   padding:0px;\r\n }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDhFQUE4RTs7O0FBRzlFO0lBQ0ksVUFBVTtJQUNWO0NBQ0g7OztBQUNBO0dBQ0UsVUFBVTtHQUNWLFdBQVc7Q0FDYiIsImZpbGUiOiJzcmMvc3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFlvdSBjYW4gYWRkIGdsb2JhbCBzdHlsZXMgdG8gdGhpcyBmaWxlLCBhbmQgYWxzbyBpbXBvcnQgb3RoZXIgc3R5bGUgZmlsZXMgKi9cclxuXHJcblxyXG4qe1xyXG4gICAgbWFyZ2luOjBweDtcclxuICAgIHBhZGRpbmc6MHB4XHJcbiB9XHJcbiBib2R5e1xyXG4gICBtYXJnaW46MHB4O1xyXG4gICBwYWRkaW5nOjBweDtcclxuIH0iXX0= */", '', '']];
     /***/
   },
 
@@ -353,7 +353,7 @@
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /home/pi/raspberry/src/styles.css */
+    /*! C:\Users\tommal\Desktop\raspberry\src\styles.css */
     "./src/styles.css");
     /***/
   }

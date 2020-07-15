@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host 192.168.1.57",
     "build": "ng build --base-href=/raspberry/",
     "test": "ng test",
     "lint": "ng lint",

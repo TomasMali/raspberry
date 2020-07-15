@@ -8,10 +8,11 @@ import { Subject } from 'rxjs';
 })
 export class JobsServiceService {
 
-  getJob = "http://93.49.6.246:3030/jobs"     
-  killJob = "http://93.49.6.246:3030/jobs/killpid/"   
+  getJob = "http://93.49.6.246:3030/jobs"
+  killJob = "http://93.49.6.246:3030/jobs/killpid/"
   restartJob = "http://93.49.6.246:3030/jobs/restartjob/"
-  
+  deployJob = "http://93.49.6.246:3030/jobs/customcmd/"
+
   private jobs: Job[] = []
   private jobSubject = new Subject()
 
@@ -23,9 +24,9 @@ export class JobsServiceService {
   }
 
 
-getJobSubject(){
-  return this.jobSubject.asObservable()
-}
+  getJobSubject() {
+    return this.jobSubject.asObservable()
+  }
 
   killJobs(pid: string) {
     this.http.get<{ response: Job[] }>(this.killJob + pid)
@@ -44,7 +45,21 @@ getJobSubject(){
       })
   }
 
+  deployJobs(name: string) {
+    this.http.get<{ response: string }>(this.deployJob + name)
+      .subscribe(resultData => {
+        console.log(resultData.response)
+      }, err => {
+      })
+  }
 
+  getTemp() {
+    return this.http.get<{ response: string }>("http://93.49.6.246:3030/jobs/temp")
+  }
+
+  restart() {
+    return this.http.get<{ response: string }>("http://93.49.6.246:3030/jobs/restart")
+  }
 
 
 

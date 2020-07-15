@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+    <h1> {{temp}} °C</h1>
+    <br><br>
+ <form  #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+    <div class="form-group">
+      <label for="exampleInputEmail1">Deploy project</label>
+      <input type = "text" name = "emailid" class="form-control"  aria-describedby="emailHelp" placeholder="Enter the app's name" ngModel>
+
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <br><br><br>
+  <button class="btn btn-md btn-danger px-2" (click)="restart()"> Restart </button>
+
+</div>

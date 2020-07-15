@@ -1,0 +1,38 @@
+
+
+
+.col_1{
+
+	border-style:solid;
+	border-color:#bbb #888 #666 #aaa;
+	border-width:3px 4px 4px 3px;
+
+	background:rgb(14,64,113);
+	color:rgb(220,53,69);
+	line-height:2;
+	text-align:center;
+	text-decoration:none;
+	font-weight:1000;
+}
+
+.col_1:active{
+    border-color: #666 #aaa #bbb #888;
+	border-width:4px 3px 3px 4px;
+	color:rgb(255, 255, 255);
+}
+
+.col_1:hover{
+    border-color: #666 #aaa #bbb #888;
+	border-width:4px 3px 3px 4px;
+	color:rgb(255, 255, 255);
+}
+
+
+
+.just_apply{
+    color: springgreen;
+    font-weight: bold;
+    border-bottom: 5px solid springgreen;
+
+}
+

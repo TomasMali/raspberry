@@ -36,6 +36,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/app-header/app-header.component.html":
+  /*!********************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/app-header/app-header.component.html ***!
+    \********************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppAppHeaderAppHeaderComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\r\n\r\n\r\n\r\n    <div class=\"row p-0 m-0 \">\r\n\r\n      <div class=\"col col_1 p-3\">\r\n       <a class=\"nav-link \" style=\"color: white;\"   routerLink=\"/home\" routerLinkActive=\"just_apply\">Home</a>\r\n     </div>\r\n\r\n      <div class=\"col col_1 p-3\">\r\n        <a class=\"nav-link \" style=\"color: white;\"   routerLink=\"/job\" routerLinkActive=\"just_apply\">Jobs</a>\r\n      </div>\r\n\r\n      <div class=\"col col_1 p-3\">\r\n        <a class=\"nav-link\" style=\"color: white;\"  routerLink=\"/deploy\" routerLinkActive=\"just_apply\">Deploy</a>\r\n      </div>\r\n      \r\n    </div>\r\n";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html":
   /*!**************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html ***!
@@ -51,7 +71,67 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n\n<div class=\"jumbotron jumbotron-fluid m-0 p-3 \">\n  <div class=\"container\">\n    <h1 class=\"display-5 text-center\">Raspberry Pi 4</h1>\n  </div>\n</div>\n\n<ul class=\"list-group\">\n  <li class=\"list-group-item active \">\n    <div class=\"row text-center\">\n      <div class=\"col col-sm ml-0 pl-0\"> Process </div>\n      <div class=\"col col-sm  ml-2 \"> PID </div>\n      <div class=\"col col-sm  ml-1 \"> USER </div>\n      <div class=\"col col-sm ml-1 \"> PORT </div>\n      <div class=\"col col-sm ml-1 \"> #Kill </div>\n    </div>\n  </li>\n\n  <li class=\"list-group-item list-group-item-success m-0 p-1 text-center\" *ngFor=\"let item of jobs; index as i;\">\n\n    <div class=\"row text-center text-dark\">\n      <div class=\"col col-md col-3 pr-0 \"> <small> <b>{{item.name}} </b>  </small> </div>\n      <div class=\"col col-md  col-2 p-0\"><small> {{item.pid}} </small> </div>\n      <div class=\"col col-md  col-2 p-0\"><small> {{item.user}} </small> </div>\n      <div class=\"col col-md   col-2 p-0 \"> <small> {{item.port}} </small> </div>\n\n      <div class=\"col col-md  col-sm-auto pl-0\">\n        <button class=\"btn btn-md btn-danger px-2\" (click)=\"killProcess(item.pid)\"> Kill </button>\n        <button class=\"btn btn-md btn-primary px-2\" (click)=\"restartProcess(item.pid)\"> Re </button>\n      </div>\n    </div>\n\n  </li>\n\n</ul>";
+    __webpack_exports__["default"] = "\r\n\r\n<app-app-header></app-app-header>\r\n\r\n\r\n\r\n\r\n <main>\r\n <router-outlet>\r\n</router-outlet>\r\n</main>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/deploy/deploy.component.html":
+  /*!************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/deploy/deploy.component.html ***!
+    \************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppDeployDeployComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<p>hardware works!</p>\r\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html":
+  /*!********************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html ***!
+    \********************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppHomeHomeComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\r\n\r\n\r\n\r\n\r\n\r\n<h1> {{temp}} °C</h1>\r\n\r\n\r\n<button class=\"btn btn-md btn-danger px-2\" (click)=\"restart()\"> Restart </button>\r\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/job/job.component.html":
+  /*!******************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/job/job.component.html ***!
+    \******************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppJobJobComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\r\n \r\n \r\n \r\n \r\n \r\n \r\n <ul class=\"list-group p-0 m-0\">\r\n \r\n   <li class=\"list-group-item active \">\r\n     <div class=\"container\">\r\n     <div class=\"row text-center\">\r\n       <div class=\"col col-sm ml-0 pl-0\"> Process </div>\r\n       <div class=\"col col-sm  ml-2 \"> PID </div>\r\n       <div class=\"col col-sm  ml-1 \"> USER </div>\r\n       <div class=\"col col-sm ml-1 \"> PORT </div>\r\n       <div class=\"col col-sm ml-1 \"> #Kill </div>\r\n     </div>\r\n   </div>\r\n   </li>\r\n \r\n   <li class=\"list-group-item list-group-item-success m-0 p-1 text-center\" *ngFor=\"let item of jobs; index as i;\">\r\n     <div class=\"container\">\r\n     <div class=\"row text-center text-dark\">\r\n       <div class=\"col col-md col-3 pr-0 \"> <small> <b>{{item.name}} </b>  </small> </div>\r\n       <div class=\"col col-md  col-2 p-0\"><small> {{item.pid}} </small> </div>\r\n       <div class=\"col col-md  col-2 p-0\"><small> {{item.user}} </small> </div>\r\n       <div class=\"col col-md   col-2 p-0 \"> <small> {{item.port}} </small> </div>\r\n       <div class=\"col col-md  col-sm-auto pl-0\">\r\n         <button class=\"btn btn-md btn-danger px-2\" (click)=\"killProcess(item.pid)\"> Kill </button>\r\n         <button class=\"btn btn-md btn-primary px-2\" (click)=\"restartProcess(item.pid)\"> Re </button>\r\n       </div>\r\n     </div>\r\n   </div>\r\n   </li>\r\n \r\n </ul>\r\n \r\n \r\n ";
     /***/
   },
 
@@ -660,6 +740,166 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/app-header/app-header.component.css":
+  /*!*****************************************************!*\
+    !*** ./src/app/app-header/app-header.component.css ***!
+    \*****************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppAppHeaderAppHeaderComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\r\n\r\n\r\n.col_1{\r\n\r\n\tborder-style:solid;\r\n\tborder-color:#bbb #888 #666 #aaa;\r\n\tborder-width:3px 4px 4px 3px;\r\n\r\n\tbackground:rgb(14,64,113);\r\n\tcolor:rgb(220,53,69);\r\n\tline-height:2;\r\n\ttext-align:center;\r\n\ttext-decoration:none;\r\n\tfont-weight:1000;\r\n}\r\n\r\n.col_1:active{\r\n    border-color: #666 #aaa #bbb #888;\r\n\tborder-width:4px 3px 3px 4px;\r\n\tcolor:rgb(255, 255, 255);\r\n}\r\n\r\n.col_1:hover{\r\n    border-color: #666 #aaa #bbb #888;\r\n\tborder-width:4px 3px 3px 4px;\r\n\tcolor:rgb(255, 255, 255);\r\n}\r\n\r\n.just_apply{\r\n    color: springgreen;\r\n    font-weight: bold;\r\n    border-bottom: 5px solid springgreen;\r\n\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLWhlYWRlci9hcHAtaGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBR0E7O0NBRUMsa0JBQWtCO0NBQ2xCLGdDQUFnQztDQUNoQyw0QkFBNEI7O0NBRTVCLHlCQUF5QjtDQUN6QixvQkFBb0I7Q0FDcEIsYUFBYTtDQUNiLGlCQUFpQjtDQUNqQixvQkFBb0I7Q0FDcEIsZ0JBQWdCO0FBQ2pCOztBQUVBO0lBQ0ksaUNBQWlDO0NBQ3BDLDRCQUE0QjtDQUM1Qix3QkFBd0I7QUFDekI7O0FBRUE7SUFDSSxpQ0FBaUM7Q0FDcEMsNEJBQTRCO0NBQzVCLHdCQUF3QjtBQUN6Qjs7QUFJQTtJQUNJLGtCQUFrQjtJQUNsQixpQkFBaUI7SUFDakIsb0NBQW9DOztBQUV4QyIsImZpbGUiOiJzcmMvYXBwL2FwcC1oZWFkZXIvYXBwLWhlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcblxyXG5cclxuLmNvbF8xe1xyXG5cclxuXHRib3JkZXItc3R5bGU6c29saWQ7XHJcblx0Ym9yZGVyLWNvbG9yOiNiYmIgIzg4OCAjNjY2ICNhYWE7XHJcblx0Ym9yZGVyLXdpZHRoOjNweCA0cHggNHB4IDNweDtcclxuXHJcblx0YmFja2dyb3VuZDpyZ2IoMTQsNjQsMTEzKTtcclxuXHRjb2xvcjpyZ2IoMjIwLDUzLDY5KTtcclxuXHRsaW5lLWhlaWdodDoyO1xyXG5cdHRleHQtYWxpZ246Y2VudGVyO1xyXG5cdHRleHQtZGVjb3JhdGlvbjpub25lO1xyXG5cdGZvbnQtd2VpZ2h0OjEwMDA7XHJcbn1cclxuXHJcbi5jb2xfMTphY3RpdmV7XHJcbiAgICBib3JkZXItY29sb3I6ICM2NjYgI2FhYSAjYmJiICM4ODg7XHJcblx0Ym9yZGVyLXdpZHRoOjRweCAzcHggM3B4IDRweDtcclxuXHRjb2xvcjpyZ2IoMjU1LCAyNTUsIDI1NSk7XHJcbn1cclxuXHJcbi5jb2xfMTpob3ZlcntcclxuICAgIGJvcmRlci1jb2xvcjogIzY2NiAjYWFhICNiYmIgIzg4ODtcclxuXHRib3JkZXItd2lkdGg6NHB4IDNweCAzcHggNHB4O1xyXG5cdGNvbG9yOnJnYigyNTUsIDI1NSwgMjU1KTtcclxufVxyXG5cclxuXHJcblxyXG4uanVzdF9hcHBseXtcclxuICAgIGNvbG9yOiBzcHJpbmdncmVlbjtcclxuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xyXG4gICAgYm9yZGVyLWJvdHRvbTogNXB4IHNvbGlkIHNwcmluZ2dyZWVuO1xyXG5cclxufVxyXG5cclxuIl19 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/app-header/app-header.component.ts":
+  /*!****************************************************!*\
+    !*** ./src/app/app-header/app-header.component.ts ***!
+    \****************************************************/
+
+  /*! exports provided: AppHeaderComponent */
+
+  /***/
+  function srcAppAppHeaderAppHeaderComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AppHeaderComponent", function () {
+      return AppHeaderComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var AppHeaderComponent = /*#__PURE__*/function () {
+      function AppHeaderComponent() {
+        _classCallCheck(this, AppHeaderComponent);
+      }
+
+      _createClass(AppHeaderComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return AppHeaderComponent;
+    }();
+
+    AppHeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-app-header',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./app-header.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/app-header/app-header.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./app-header.component.css */
+      "./src/app/app-header/app-header.component.css"))["default"]]
+    })], AppHeaderComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/app-routing.module.ts":
+  /*!***************************************!*\
+    !*** ./src/app/app-routing.module.ts ***!
+    \***************************************/
+
+  /*! exports provided: AppRoutingModule */
+
+  /***/
+  function srcAppAppRoutingModuleTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function () {
+      return AppRoutingModule;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _job_job_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./job/job.component */
+    "./src/app/job/job.component.ts");
+    /* harmony import */
+
+
+    var _home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./home/home.component */
+    "./src/app/home/home.component.ts");
+    /* harmony import */
+
+
+    var _deploy_deploy_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./deploy/deploy.component */
+    "./src/app/deploy/deploy.component.ts");
+
+    var routes = [{
+      path: "",
+      component: _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"],
+      pathMatch: "full"
+    }, {
+      path: 'job',
+      component: _job_job_component__WEBPACK_IMPORTED_MODULE_3__["JobComponent"]
+    }, {
+      path: 'home',
+      component: _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"]
+    }, {
+      path: 'deploy',
+      component: _deploy_deploy_component__WEBPACK_IMPORTED_MODULE_5__["DeployComponent"]
+    }];
+
+    var AppRoutingModule = function AppRoutingModule() {
+      _classCallCheck(this, AppRoutingModule);
+    };
+
+    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)],
+      exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]],
+      providers: []
+    })], AppRoutingModule);
+    /***/
+  },
+
+  /***/
   "./src/app/app.component.css":
   /*!***********************************!*\
     !*** ./src/app/app.component.css ***!
@@ -710,69 +950,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
 
+    var AppComponent = function AppComponent() {
+      _classCallCheck(this, AppComponent);
 
-    var _jobs_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ./jobs-service.service */
-    "./src/app/jobs-service.service.ts");
-
-    var AppComponent = /*#__PURE__*/function () {
-      function AppComponent(JobsService) {
-        _classCallCheck(this, AppComponent);
-
-        this.JobsService = JobsService;
-        this.title = 'Raspberry'; //
-
-        this.jobs = [];
-      }
-
-      _createClass(AppComponent, [{
-        key: "ngOnInit",
-        value: function ngOnInit() {
-          var _this = this;
-
-          this.onClick();
-          this.jobSub = this.JobsService.getJobSubject().subscribe(function () {
-            _this.onClick();
-          });
-        }
-      }, {
-        key: "ngOnDestroy",
-        value: function ngOnDestroy() {
-          this.jobSub.unsubscribe();
-        }
-      }, {
-        key: "onClick",
-        value: function onClick() {
-          var _this2 = this;
-
-          this.JobsService.getJobs().subscribe(function (resultData) {
-            _this2.jobs = resultData.response.sort(function (a, b) {
-              return a.name.localeCompare(b.name);
-            });
-          }, function (err) {});
-        }
-      }, {
-        key: "killProcess",
-        value: function killProcess(pid) {
-          // console.log(pid)
-          this.JobsService.killJobs(pid);
-        }
-      }, {
-        key: "restartProcess",
-        value: function restartProcess(pid) {
-          this.JobsService.restartJobs(pid);
-        }
-      }]);
-
-      return AppComponent;
-    }();
-
-    AppComponent.ctorParameters = function () {
-      return [{
-        type: _jobs_service_service__WEBPACK_IMPORTED_MODULE_2__["JobsServiceService"]
-      }];
+      this.title = 'Raspberry';
     };
 
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -842,17 +1024,356 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _jobs_service_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./jobs-service.service */
     "./src/app/jobs-service.service.ts");
+    /* harmony import */
+
+
+    var _app_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./app-routing.module */
+    "./src/app/app-routing.module.ts");
+    /* harmony import */
+
+
+    var _job_job_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./job/job.component */
+    "./src/app/job/job.component.ts");
+    /* harmony import */
+
+
+    var _app_header_app_header_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ./app-header/app-header.component */
+    "./src/app/app-header/app-header.component.ts");
+    /* harmony import */
+
+
+    var _home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ./home/home.component */
+    "./src/app/home/home.component.ts");
+    /* harmony import */
+
+
+    var _deploy_deploy_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! ./deploy/deploy.component */
+    "./src/app/deploy/deploy.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _job_job_component__WEBPACK_IMPORTED_MODULE_7__["JobComponent"], _app_header_app_header_component__WEBPACK_IMPORTED_MODULE_8__["AppHeaderComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"], _deploy_deploy_component__WEBPACK_IMPORTED_MODULE_10__["DeployComponent"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"]],
       providers: [_jobs_service_service__WEBPACK_IMPORTED_MODULE_5__["JobsServiceService"]],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })], AppModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/deploy/deploy.component.css":
+  /*!*********************************************!*\
+    !*** ./src/app/deploy/deploy.component.css ***!
+    \*********************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppDeployDeployComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2RlcGxveS9kZXBsb3kuY29tcG9uZW50LmNzcyJ9 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/deploy/deploy.component.ts":
+  /*!********************************************!*\
+    !*** ./src/app/deploy/deploy.component.ts ***!
+    \********************************************/
+
+  /*! exports provided: DeployComponent */
+
+  /***/
+  function srcAppDeployDeployComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "DeployComponent", function () {
+      return DeployComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var DeployComponent = /*#__PURE__*/function () {
+      function DeployComponent() {
+        _classCallCheck(this, DeployComponent);
+      }
+
+      _createClass(DeployComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return DeployComponent;
+    }();
+
+    DeployComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-hardware',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./deploy.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/deploy/deploy.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./deploy.component.css */
+      "./src/app/deploy/deploy.component.css"))["default"]]
+    })], DeployComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/home/home.component.css":
+  /*!*****************************************!*\
+    !*** ./src/app/home/home.component.css ***!
+    \*****************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppHomeHomeComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/home/home.component.ts":
+  /*!****************************************!*\
+    !*** ./src/app/home/home.component.ts ***!
+    \****************************************/
+
+  /*! exports provided: HomeComponent */
+
+  /***/
+  function srcAppHomeHomeComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "HomeComponent", function () {
+      return HomeComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _jobs_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../jobs-service.service */
+    "./src/app/jobs-service.service.ts");
+
+    var HomeComponent = /*#__PURE__*/function () {
+      function HomeComponent(jobService) {
+        _classCallCheck(this, HomeComponent);
+
+        this.jobService = jobService;
+        this.temp = "0";
+      }
+
+      _createClass(HomeComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this = this;
+
+          this.jobService.getTemp().subscribe(function (x) {
+            _this.temp = x.response;
+          });
+        }
+      }, {
+        key: "restart",
+        value: function restart() {
+          if (confirm("Confermi di Riavviare!")) this.jobService.restart().subscribe(function (x) {
+            console.log(x.response);
+          });
+        }
+      }]);
+
+      return HomeComponent;
+    }();
+
+    HomeComponent.ctorParameters = function () {
+      return [{
+        type: _jobs_service_service__WEBPACK_IMPORTED_MODULE_2__["JobsServiceService"]
+      }];
+    };
+
+    HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-home',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./home.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./home.component.css */
+      "./src/app/home/home.component.css"))["default"]]
+    })], HomeComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/job/job.component.css":
+  /*!***************************************!*\
+    !*** ./src/app/job/job.component.css ***!
+    \***************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppJobJobComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2pvYi9qb2IuY29tcG9uZW50LmNzcyJ9 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/job/job.component.ts":
+  /*!**************************************!*\
+    !*** ./src/app/job/job.component.ts ***!
+    \**************************************/
+
+  /*! exports provided: JobComponent */
+
+  /***/
+  function srcAppJobJobComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "JobComponent", function () {
+      return JobComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _jobs_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../jobs-service.service */
+    "./src/app/jobs-service.service.ts");
+
+    var JobComponent = /*#__PURE__*/function () {
+      function JobComponent(JobsService) {
+        _classCallCheck(this, JobComponent);
+
+        this.JobsService = JobsService; //
+
+        this.jobs = [];
+      }
+
+      _createClass(JobComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this2 = this;
+
+          this.onClick();
+          this.jobSub = this.JobsService.getJobSubject().subscribe(function () {
+            _this2.onClick();
+          });
+        }
+      }, {
+        key: "ngOnDestroy",
+        value: function ngOnDestroy() {
+          this.jobSub.unsubscribe();
+        }
+      }, {
+        key: "onClick",
+        value: function onClick() {
+          var _this3 = this;
+
+          this.JobsService.getJobs().subscribe(function (resultData) {
+            _this3.jobs = resultData.response.sort(function (a, b) {
+              return a.name.localeCompare(b.name);
+            });
+          }, function (err) {});
+        }
+      }, {
+        key: "killProcess",
+        value: function killProcess(pid) {
+          // console.log(pid)
+          this.JobsService.killJobs(pid);
+        }
+      }, {
+        key: "restartProcess",
+        value: function restartProcess(pid) {
+          this.JobsService.restartJobs(pid);
+        }
+      }]);
+
+      return JobComponent;
+    }();
+
+    JobComponent.ctorParameters = function () {
+      return [{
+        type: _jobs_service_service__WEBPACK_IMPORTED_MODULE_2__["JobsServiceService"]
+      }];
+    };
+
+    JobComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-job',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./job.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/job/job.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./job.component.css */
+      "./src/app/job/job.component.css"))["default"]]
+    })], JobComponent);
     /***/
   },
 
@@ -925,20 +1446,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "killJobs",
         value: function killJobs(pid) {
-          var _this3 = this;
+          var _this4 = this;
 
           this.http.get(this.killJob + pid).subscribe(function (resultData) {
-            _this3.jobSubject.next();
+            _this4.jobSubject.next();
           }, function (err) {});
         }
       }, {
         key: "restartJobs",
         value: function restartJobs(pid) {
-          var _this4 = this;
+          var _this5 = this;
 
           this.http.get(this.restartJob + pid).subscribe(function (resultData) {
-            _this4.jobSubject.next();
+            _this5.jobSubject.next();
           }, function (err) {});
+        }
+      }, {
+        key: "getTemp",
+        value: function getTemp() {
+          return this.http.get("http://93.49.6.246:3030/jobs/temp");
+        }
+      }, {
+        key: "restart",
+        value: function restart() {
+          return this.http.get("http://93.49.6.246:3030/jobs/restart");
         }
       }]);
 
@@ -1066,7 +1597,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /home/pi/raspberry/src/main.ts */
+    /*! C:\Users\tommal\Desktop\raspberry\src\main.ts */
     "./src/main.ts");
     /***/
   }
