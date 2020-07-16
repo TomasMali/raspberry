@@ -111,7 +111,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\r\n\r\n\r\n\r\n\r\n\r\n<h1> {{temp}} °C</h1>\r\n\r\n\r\n<button class=\"btn btn-md btn-danger px-2\" (click)=\"restart()\"> Restart </button>\r\n";
+    __webpack_exports__["default"] = "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div class=\"container\">\r\n\r\n    <h1> {{temp}} °C</h1>\r\n    <br><br>\r\n <form  #userlogin = \"ngForm\" (ngSubmit) = \"onClickSubmit(userlogin.value)\" >\r\n    <div class=\"form-group\">\r\n      <label for=\"exampleInputEmail1\">Deploy project</label>\r\n      <input type = \"text\" name = \"emailid\" class=\"form-control\"  aria-describedby=\"emailHelp\" placeholder=\"Enter the app's name\" ngModel>\r\n\r\n    </div>\r\n    \r\n    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n  </form>\r\n\r\n  <br><br><br>\r\n  <button class=\"btn btn-md btn-danger px-2\" (click)=\"restart()\"> Restart </button>\r\n\r\n</div>";
     /***/
   },
 
@@ -1054,6 +1054,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _deploy_deploy_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ./deploy/deploy.component */
     "./src/app/deploy/deploy.component.ts");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -1061,7 +1067,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
       declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _job_job_component__WEBPACK_IMPORTED_MODULE_7__["JobComponent"], _app_header_app_header_component__WEBPACK_IMPORTED_MODULE_8__["AppHeaderComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"], _deploy_deploy_component__WEBPACK_IMPORTED_MODULE_10__["DeployComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_11__["FormsModule"]],
       providers: [_jobs_service_service__WEBPACK_IMPORTED_MODULE_5__["JobsServiceService"]],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })], AppModule);
@@ -1226,6 +1232,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           if (confirm("Confermi di Riavviare!")) this.jobService.restart().subscribe(function (x) {
             console.log(x.response);
           });
+        }
+      }, {
+        key: "onClickSubmit",
+        value: function onClickSubmit(data) {
+          console.log(data.emailid);
+          this.jobService.deployJobs(data.emailid);
         }
       }]);
 
@@ -1429,6 +1441,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.getJob = "http://93.49.6.246:3030/jobs";
         this.killJob = "http://93.49.6.246:3030/jobs/killpid/";
         this.restartJob = "http://93.49.6.246:3030/jobs/restartjob/";
+        this.deployJob = "http://93.49.6.246:3030/jobs/customcmd/";
         this.jobs = [];
         this.jobSubject = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
       }
@@ -1459,6 +1472,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.http.get(this.restartJob + pid).subscribe(function (resultData) {
             _this5.jobSubject.next();
+          }, function (err) {});
+        }
+      }, {
+        key: "deployJobs",
+        value: function deployJobs(name) {
+          this.http.get(this.deployJob + name).subscribe(function (resultData) {
+            console.log(resultData.response);
           }, function (err) {});
         }
       }, {

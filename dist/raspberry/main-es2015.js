@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\n\r\n\r\n\r\n\r\n\r\n<h1> {{temp}} °C</h1>\r\n\r\n\r\n<button class=\"btn btn-md btn-danger px-2\" (click)=\"restart()\"> Restart </button>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n<div class=\"container\">\r\n\r\n    <h1> {{temp}} °C</h1>\r\n    <br><br>\r\n <form  #userlogin = \"ngForm\" (ngSubmit) = \"onClickSubmit(userlogin.value)\" >\r\n    <div class=\"form-group\">\r\n      <label for=\"exampleInputEmail1\">Deploy project</label>\r\n      <input type = \"text\" name = \"emailid\" class=\"form-control\"  aria-describedby=\"emailHelp\" placeholder=\"Enter the app's name\" ngModel>\r\n\r\n    </div>\r\n    \r\n    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n  </form>\r\n\r\n  <br><br><br>\r\n  <button class=\"btn btn-md btn-danger px-2\" (click)=\"restart()\"> Restart </button>\r\n\r\n</div>");
 
 /***/ }),
 
@@ -493,6 +493,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_header_app_header_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app-header/app-header.component */ "./src/app/app-header/app-header.component.ts");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _deploy_deploy_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./deploy/deploy.component */ "./src/app/deploy/deploy.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+
 
 
 
@@ -518,7 +520,8 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"]
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_11__["FormsModule"]
         ],
         providers: [_jobs_service_service__WEBPACK_IMPORTED_MODULE_5__["JobsServiceService"]],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
@@ -617,6 +620,10 @@ let HomeComponent = class HomeComponent {
             this.jobService.restart().subscribe(x => {
                 console.log(x.response);
             });
+    }
+    onClickSubmit(data) {
+        console.log(data.emailid);
+        this.jobService.deployJobs(data.emailid);
     }
 };
 HomeComponent.ctorParameters = () => [
@@ -731,6 +738,7 @@ let JobsServiceService = class JobsServiceService {
         this.getJob = "http://93.49.6.246:3030/jobs";
         this.killJob = "http://93.49.6.246:3030/jobs/killpid/";
         this.restartJob = "http://93.49.6.246:3030/jobs/restartjob/";
+        this.deployJob = "http://93.49.6.246:3030/jobs/customcmd/";
         this.jobs = [];
         this.jobSubject = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
     }
@@ -751,6 +759,13 @@ let JobsServiceService = class JobsServiceService {
         this.http.get(this.restartJob + pid)
             .subscribe(resultData => {
             this.jobSubject.next();
+        }, err => {
+        });
+    }
+    deployJobs(name) {
+        this.http.get(this.deployJob + name)
+            .subscribe(resultData => {
+            console.log(resultData.response);
         }, err => {
         });
     }
