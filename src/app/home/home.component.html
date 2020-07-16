@@ -7,24 +7,104 @@
 
 
 
+<body>
+  
+
+
+
+
+
+
+<!--
 
 
 
 <div class="container">
-
-    <h1> {{temp}} °C</h1>
-    <br><br>
- <form  #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
-    <div class="form-group">
-      <label for="exampleInputEmail1">Deploy project</label>
-      <input type = "text" name = "emailid" class="form-control"  aria-describedby="emailHelp" placeholder="Enter the app's name" ngModel>
-
-    </div>
-    
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-
-  <br><br><br>
-  <button class="btn btn-md btn-danger px-2" (click)="restart()"> Restart </button>
-
+  <div class="row">
+      <div class="card d-flex justify-content-center mx-auto my-3 p-5">
+          <h6 class="text-muted">INFORMATION</h6>
+          <h2>Contact Us</h2>
+          <div class="form-row">
+              <div class="form-group col-md-6 first"> <label for="inputFirstName">FIRST NAME <span>*</span></label> <input type="text" class="form-control" id="inputFirstName" name="firstname" required>
+                  <div id="fname_error" class="val_error"></div>
+              </div>
+              <div class="form-group col-md-6 first"> <label for="inputLastName">LAST NAME <span>*</span></label> <input type="text" class="form-control" id="inputLastName" name="lastname">
+                  <div id="lname_error" class="val_error"></div>
+              </div>
+          </div>
+          <div class="form-row">
+              <div class="form-group col-md-6"> <label for="inputEmail">EMAIL <span>*</span></label> <input type="email" class="form-control" id="inputEmail" name="youremail">
+                  <div id="email_error" class="val_error"></div>
+              </div>
+              <div class="form-group col-md-6"> <label for="inputPhone">PHONE <span>*</span></label> <input type="text" class="form-control" id="inputPhone" name="yourphoneno">
+                  <div id="phone_error" class="val_error"></div>
+              </div>
+          </div>
+          <div class="form-group mt-0"> <label for="exampleFormControlTextarea1">MESSAGE <span>*</span></label> <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="yourmessage"></textarea>
+              <div id="message_error" class="val_error"></div>
+          </div>
+          <div class="form-check form-check-inline"> <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> <label class="form-check-label" for="inlineCheckbox1">&nbsp;&nbsp;Send me offers & updates</label> </div>
+          <div class="form-button pt-4"> <button type="submit" class="btn btn-primary btn-block btn-lg" value="Register" name="register"><span>SEND MESSAGE</span></button> </div>
+      </div>
+  </div>
 </div>
+
+-->
+
+
+
+<div class="container px-5 py-4 mx-auto">
+  <div class="card card0">
+      <div class="d-flex flex-lg-row flex-column-reverse">
+          <div class="card card1">
+              <div class="row justify-content-center my-auto">
+                  <div class="col-md-8 col-10 my-5">
+                      <div class="row justify-content-center px-3 mb-3"> <img id="logo" src="https://i.imgur.com/PSXxjNY.png"> </div>
+                      <h3 class="mb-5 text-center heading">I'am Raspberry Pi</h3>
+                      <h6 class="msg-info">Please login to your account</h6>
+                      <div class="form-group"> <label class="form-control-label text-muted">Username</label> <input type="text" id="email" name="email" placeholder="Phone no or email id" class="form-control"> </div>
+                      <div class="form-group"> <label class="form-control-label text-muted">Password</label> <input type="password" id="psw" name="psw" placeholder="Password" class="form-control"> </div>
+                      <div class="row justify-content-center my-3 px-3"> <button class="btn-block btn-color">Login to Pi</button> </div>
+                      <div class="row justify-content-center my-2"> <a href="#"><small class="text-muted">Forgot Password?</small></a> </div>
+                  </div>
+              </div>
+              <div class="bottom text-center mb-5">
+                  <p href="#" class="sm-text mx-auto mb-3">Don't have an account?<button class="btn btn-white ml-2">Create new</button></p>
+         
+              </div>
+          </div>
+          <div class="card card2">
+              <div class="my-auto mx-md-5 px-md-5 right">
+                  <h3 class="text-white">We are more than just a company</h3> <small class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+             
+                  <div class="container mt-4">
+
+
+<hr>
+                    <h1 class="text-white"> {{temp}} °C</h1>
+                    <br><br>
+                 <form  #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+                    <div class="form-group">
+       
+                      <input type = "text" name = "emailid" class="form-control"  aria-describedby="emailHelp" placeholder="Enter the app's name" ngModel>
+                
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block btn-color-deploy">Deploy</button>
+                  </form>
+                
+                  <br><br>
+                  <hr>
+                  <br>
+                  <button class="btn btn-md btn-danger  px-2 btn-block " (click)="restart()"> Restart </button>
+                
+                </div>
+                
+                </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+</body>
